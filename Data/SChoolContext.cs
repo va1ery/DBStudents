@@ -15,5 +15,11 @@ namespace SchoolDB.Data
                 optionsBuilder.UseSqlite(@"Data Source=DBStudents.db");
             }
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Course>().ToTable("Course");
+            modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
+            modelBuilder.Entity<Student>().ToTable("Student");
+        } 
     }
 }
