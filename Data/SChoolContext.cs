@@ -12,7 +12,7 @@ namespace SchoolDB.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite(@"Data Source=DBDtudents.db");
+                optionsBuilder.UseSqlite(@"Data Source=DBStudents.db");
             }
         }
     }
